@@ -1,0 +1,43 @@
+class caluclator{
+
+fun read(a:Int,b:Int){
+
+print("Enter an operator (+, -, *, /): ")
+
+val operator = readLine()
+
+val result: Int
+
+when (operator) {
+
+"+" -> result = a + b
+
+"-" -> result = a - b
+
+"*"-> result = a * b
+
+"/" -> result = a /b
+
+else -> {
+
+System.out.printf("Error! operator is not correct")
+
+return
+
+}
+
+}
+
+System.out.printf("%d %c %d = %d", a, operator, b, result)
+
+}
+
+}
+
+fun main(args:Array<String>){
+
+val obj = caluclator()
+
+obj.read(5,5)
+
+}
