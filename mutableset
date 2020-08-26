@@ -1,0 +1,16 @@
+fun main(args: Array<String>) {  
+    val mutableSet1 = mutableSetOf<Int>(2, 6, 4, 29, 4, 5)  
+    val mutableSet2: MutableSet<Int> = mutableSetOf<Int>(6,8,11,22)  
+    val mutableSet3: MutableSet<Int> = mutableSetOf<Int>(2,4,6)  
+  
+   
+    for(element in mutableSet1){  
+        println(element)  
+    }  
+        println(mutableSet2)   
+        println(mutableSet3)  
+  
+    println(mutableSet1.contains(29))     
+    println(mutableSet1.containsAll(mutableSet2))   
+    println(mutableSet1.containsAll(mutableSet3))  
+}  
